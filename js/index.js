@@ -17,6 +17,7 @@ aHref[1].addEventListener('blur',(e)=>{
     aHref[2].style.color= 'white'
     aHref[0].style.color= 'white'
     e.stopPropagation()
+    preventDefault()
 })
 aHref[1].addEventListener('focus',(e)=>{
     aHref[1].style.background= 'green'
@@ -24,6 +25,7 @@ aHref[1].addEventListener('focus',(e)=>{
     aHref[2].style.color= 'black'
     aHref[0].style.color= 'black'
     e.stopPropagation()
+    preventDefault()
 })
 //aHref.addEventListener('blur',()=>{
 //    aHref.style.backgroundColor= 'dodger blue'
