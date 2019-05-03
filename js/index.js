@@ -99,4 +99,36 @@ if (red === false) {
 })
 
 
+let header = document.querySelectorAll('.text-content h2')
 
+
+header[0].addEventListener('mouseover', (e)=>{
+
+  if(red === false ){header[0].textContent='Lambda' ;red = true; e.stopPropagation() }
+  else{header[0].textContent='LOOK UP'; red =false;e.stopPropagation()}
+
+})
+
+
+let imgContent = document.querySelector('.img-content img')
+
+imgContent.addEventListener('dblclick',(e)=>{
+
+        if(red === false ){imgContent.style.opacity = "0.2";red = true; e.stopPropagation() }
+        else{imgContent.style.opacity = "3"; red =false;e.stopPropagation()}
+    
+    }
+)
+
+
+let destinationImg = document.querySelector('.content-destination img');
+
+
+
+destinationImg .addEventListener('mouseout',(e)=>{
+
+    if(red === false ){destinationImg.style.opacity = "0";red = true; e.stopPropagation() }
+    else{destinationImg .style.opacity = "3"; red =false;e.stopPropagation()}
+
+}
+)
